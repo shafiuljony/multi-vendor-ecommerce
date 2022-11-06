@@ -10,6 +10,7 @@ const modalCloseOverlay = document.querySelector('[data-modal-overlay]');
 // modal function 
 
 const modalCloseFunc = function () { modal.classList.add('closed')}
+const promotionCloseFunc = function () { modal.classList.add('closed')}
 
 // modal EventListener
 
