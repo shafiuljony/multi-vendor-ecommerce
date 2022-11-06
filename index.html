@@ -807,7 +807,7 @@
 
           </div>
 
-          <div class="slider-item swiper-slide">
+          <div class="swiper-slide">
 
             <img src="./assets/images/banner-2.jpg" alt="modern sunglasses" class="banner-img">
 
@@ -827,7 +827,7 @@
 
           </div>
 
-          <div class="slider-item swiper-slide">
+          <div class=" swiper-slide">
 
             <img src="./assets/images/banner-3.jpg" alt="new fashion summer sale" class="banner-img">
 
@@ -849,9 +849,9 @@
 
         </div>
 
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        <!--  navigation buttons -->
+        <div class="swiper-button-prev swiperBtn"></div>
+        <div class="swiper-button-next swiperBtn"></div>
 
       </div>
 
@@ -3598,6 +3598,21 @@
   -->
   <script src="./assets/js/script.js"></script>
   <script src="./assets/js/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    const swiper = new Swiper('.swiper', {
+
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      autoplay: {
+        delay: 2000,
+      },
+    });
+  </script>
 
   <!--
     - ionicon link
