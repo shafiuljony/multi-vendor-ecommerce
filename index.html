@@ -849,6 +849,7 @@
 
         </div>
 
+        <div class="swiper-pagination"></div>
         <!--  navigation buttons -->
         <div class="swiper-button-prev swiperBtn"></div>
         <div class="swiper-button-next swiperBtn"></div>
@@ -3603,6 +3604,11 @@
   <script>
     const swiper = new Swiper('.swiper', {
 
+      pagination: {
+        el: '.swiper-pagination',
+        dynamicBullets: true,
+      },
+
       // Navigation arrows
       navigation: {
         nextEl: '.swiper-button-next',
@@ -3610,6 +3616,7 @@
       },
       autoplay: {
         delay: 2000,
+        reverseDirection: true,
       },
     });
   </script>

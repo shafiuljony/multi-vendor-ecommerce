@@ -713,6 +713,21 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   object-position: right;
 }
 
+.swiperBtn{
+  height: 3rem !important;
+  width: 3rem !important;
+  background: var(--salmon-pink);
+  border-radius: 50%;
+  color: var(--white) !important;
+}
+.swiper-pagination-bullet{
+  background-color: var(--white) !important;
+  opacity: 1 !important;
+}
+.swiper-pagination-bullet-active{
+  background-color: var(--salmon-pink) !important;
+}
+
 .banner-content {
   background: hsla(0, 0%, 100%, 0.8);
   position: absolute;
