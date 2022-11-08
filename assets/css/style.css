@@ -2677,4 +2677,15 @@ footer {
     max-width: 460px;
   }
 
+/*-----------------------------------*\
+  04.404 page 
+\*-----------------------------------*/
+
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#btn-404{
+  width: fit-content;
 }
