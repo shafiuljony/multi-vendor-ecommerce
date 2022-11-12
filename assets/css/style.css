@@ -2320,148 +2320,60 @@ footer {
   }
 
   /* mini cart sitebar  */
-  .cart-sidebar {
-    /* height: 100%; */
-    height: 70%;
-    width: 420px;
-    background-color: white;
-    position: fixed;
-    right: 0;
-    top: -100%;
-    box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.1);
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    transition: right 0.1s ease;
-    z-index: 10;
-  }
-  
-  .cart-sidebar.show {
-    top: 10rem;
-  }
-  
-  /* header */
-  .cart-header-padding {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  
-  .cart-header {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid #e8e8e8;
-    padding-bottom: 15px;
-    margin-bottom: 20px;
-  }
-  
-  .title {
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 700;
-  }
-  
-  .items {
-    font-size: 10px;
-  }
-  
-  /* products */
-  .cart-products {
-    flex-grow: 1;
-    overflow-y: auto;
-    padding: 0 30px 10px;
-  }
-  
-  .product {
-    margin-bottom: 10px;
-    border: 1px solid #e8e8e8;
-    border-radius: 3px;
-  }
-  
-  .details {
-    padding: 15px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .product-img {
-    width: 100px;
-  }
-  
-  .product-info {
-    margin-left: 20px;
-  }
-  
-  .product-name {
-    font-size: 12px;
-    font-weight: 700;
-  }
-  
-  .product-price {
-    font-size: 12px;
-    margin-top: 4px;
-  }
-  
-  /* controls */
-  .controls {
-    border-top: 1px solid #e8e8e8;
-    display: flex;
-  }
-  
-  .quantity,
-  .trash-btn {
-    width: 50%;
-  }
-  
-  .quantity {
-    display: flex;
-    justify-content: space-between;
-    padding: 10px 15px;
-  }
-  
-  .quantity-num {
-    font-size: 12px;
-  }
-  
-  .trash-btn {
-    border-left: 1px solid #e8e8e8;
-  }
-  
-  .trash-btn:hover {
-    background-color: #f63a35;
-    color: white;
-  }
-  
-  /* footer */
-  .cart-footer {
-    padding: 0 30px 20px;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
-  }
-  
-  .total {
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 700;
-    display: flex;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
-  
-  .checkout-link {
-    font-size: 12px;
-    font-weight: 700;
-    background-color: black;
-    text-transform: uppercase;
-    display: inline-block;
-    width: 100%;
-    border-radius: 3px;
-    color: white;
-    text-align: center;
-    padding: 13px 5px;
-  }
+  .site-cart { float:right; position:relative; }
+.site-header__cart { color:#000; text-decoration:none; }
+.site-header__cart:hover { text-decoration:none; }
+.site-header__cart .icon { font-size:22px; text-decoration:none; }
+.site-header__cart-count { 
+  position: absolute;
+  top: -2px;
+  right: -3px;
+  background: var(--bittersweet);
+  color: var(--white);
+  font-size: 12px;
+  font-weight: var(--weight-500);
+  line-height: 1;
+  padding: 2px 4px;
+  border-radius: 20px; }
+#header-cart { z-index:333; width:320px; margin-top:5px; display:none; background-color:#fff; border:1px solid #e8e9eb; position:absolute; top:100%; right:-5px; z-index:555; border-radius:0; }
+#header-cart hr { margin:20px 0 }
+#header-cart .btn { color:#fff; margin:0 2% 0 0; width:48%; padding:10px; }
+#header-cart .btn:nth-of-type(2n){ margin-right:0; }
+#header-cart #cart-title { text-align:left; margin-bottom:0; }
+#header-cart #cart-title strong { color:#000000; }
+#header-cart .variant-cart { color:#777; font-size:11px; }
+#header-cart .wrapQtyBtn { display:block; float:none; margin-top:5px; }
+#header-cart .qtyField .label { float:left; line-height:30px; padding-right:5px; }
+#header-cart .qtyField .qtyBtn, #header-cart .qtyField .qty { font-size:11px; width:25px; height:30px; display:inline-block; padding:3px;}
+#header-cart .qtyField a .fa { font-size:11px; }
+#header-cart .priceRow { margin-top:0; color:#000000; }
+.mini-products-list { padding:15px 15px 0; max-height:380px; overflow-x:hidden; overflow-y:auto; list-style:none; margin:0; }
+.mini-products-list + .mini-products-list { padding-top:0; }
+.mini-products-list li { padding-bottom:10px; margin-bottom:10px; line-height:normal; display:block; border-bottom:solid 1px #eee; }
+.mini-products-list li:last-of-type { border-bottom:0; padding-bottom:0; }
+.mini-products-list li:before, .mini-products-list li:after { content:''; clear:both; display:block; }
+.mini-products-list li .product-image { width:25%; float:left; }
+.mini-products-list li .pro-img { float:left; width:30%; }
+.mini-products-list li .pName { color:#000; font-size:13px; white-space:normal; text-decoration:none; display:block; line-height:normal; margin-right:18px; margin-bottom:0; }
+.mini-products-list li .pName:hover { color:#222; }
+.mini-products-list li .product-details { float:left; width:75%; padding-left:15px; text-align:left; }
+.mini-products-list li .remove { color:#5c5c5c; float:right; font-size:14px; padding:0 2px 0 7px; margin-top:0; text-decoration:none; }
+.mini-products-list li .remove:hover { color:#000; }
+.mini-products-list li .edit-i.remove { font-size:11px; padding-top:1px; }
+.mini-products-list li .priceRow { margin:10px 0 0; }
+.mini-products-list li .priceRow .prodMulti { display:inline-block; font-size:10px; }
+.mini-products-list li .priceRow .product-price { display:inline-block; }
+.mini-products-list li .qtyField { display:inline-block; padding-left:2px; }
+.mini-products-list li .qtyField a { display:none; }
+.mini-products-list li .qtyField span { display:inline-block; padding:0; border:0; }
+#header-cart .total { padding:0 10px 15px; }
+#header-cart .total .total-in { color:#000; margin:10px 0; padding:8px 10px; border-top:1px solid #e8e9eb; border-bottom:1px solid #e8e9eb; text-align:left; display:inline-block; width:100%; }
+#header-cart .total .product-price { float:right; font-size:16px; }
+#header-cart .total label { float:left; line-height:24px; text-transform:uppercase; margin:0; }
+#header-cart .total .total-in .label { text-transform:uppercase; }
 
 
-/* mini cart sitebar  */
+/* end mini cart sitebar  */
 
   .desktop-navigation-menu { display: block; }
 

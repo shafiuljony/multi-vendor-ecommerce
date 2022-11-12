@@ -141,24 +141,3 @@ function easeInOutCubic(t, b, c, d) {
 	t -= 2;
 	return c/2*(t*t*t + 2) + b;
 };
-
-
-// mini cart elements
-const cartBtn = document.getElementById("cart-btn");
-const cartSidebar = document.getElementById("cart-sidebar");
-const closeBtn = document.getElementById("close-btn");
-
-cartBtn.addEventListener("click", () => {
-  cartSidebar.classList.add("show");
-});
-
-closeBtn.addEventListener("click", () => {
-  cartSidebar.classList.remove("show");
-});
-
-// document.addEventListener('mouseup', function(e) {
-//   var outsiteCllick = document.getElementById('cart-sidebar');
-//   if (!outsiteCllick.contains(e.target)) {
-//     outsiteCllick.style.display = 'none';
-//   }
-// });
