@@ -18,9 +18,9 @@
 
   <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css";
 
-  <!-- bootstrap css linl -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <!-- bootstrap css link -->
+  <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css"> -->
 
   <!-- google font link--->
     
@@ -230,10 +230,90 @@
             <span class="count">0</span>
           </button>
 
-          <button class="action-btn">
-            <ion-icon name="bag-handle-outline"></ion-icon>
-            <span class="count">0</span>
-          </button>
+          <!-- mini site bar  -->
+          <div>
+
+            <button class="action-btn" id="cart-btn">
+              <ion-icon name="bag-handle-outline"></ion-icon>
+              <span class="count">0</span>
+            </button>
+            <!-- cart sidebar -->
+            <div id="cart-sidebar" class="cart-sidebar">
+              <!-- header -->
+              <div class="cart-header-padding">
+                <div class="cart-header">
+                  <p>
+                    <span class="title">cart</span> <span class="items">(1 item)</span>
+                  </p>
+                  <button id="close-btn">
+                    <ion-icon name="close"></ion-icon>
+                  </button>
+                </div>
+              </div>
+              <!-- products -->
+              <div class="cart-products">
+                <!-- product -->
+                <div class="product">
+                  <div class="details">
+                    <img src="./assets/images/products/1.jpg" alt="baby fabric shoes" width="75" height="75"
+                      class="showcase-img">
+                    <div class="product-info">
+                      <p class="product-name">Baby fabric shoes</p>
+                      <p class="product-price">&#2547; 160</p>
+                    </div>
+                  </div>
+                  <div class="controls">
+                    <div class="quantity">
+                      <button class="decrement-btn">
+                        <ion-icon name="remove"></ion-icon>
+                      </button>
+                      <p class="quantity-num">1</p>
+                      <button class="increment-btn">
+                        <ion-icon name="add"></ion-icon>
+                      </button>
+                    </div>
+                    <button class="trash-btn">
+                      <ion-icon name="trash"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+                <!-- product -->
+                <div class="product">
+                  <div class="details">
+                    <img src="./assets/images/products/2.jpg" alt="men's hoodies t-shirt" class="showcase-img"
+                      width="75" height="75">
+                    <div class="product-info">
+                      <p class="product-name">Men's hoodies t-shirt</p>
+                      <p class="product-price">&#2547;360</p>
+                    </div>
+                  </div>
+                  <div class="controls">
+                    <div class="quantity">
+                      <button class="decrement-btn">
+                        <ion-icon name="remove"></ion-icon>
+                      </button>
+                      <p class="quantity-num">1</p>
+                      <button class="increment-btn">
+                        <ion-icon name="add"></ion-icon>
+                      </button>
+                    </div>
+                    <button class="trash-btn">
+                      <ion-icon name="trash"></ion-icon>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- footer -->
+              <div class="cart-footer">
+                <div class="total">
+                  <p>total</p>
+                  <p>&#2547;1000</p>
+                </div>
+                <a href="#" class="checkout-link">checkout</a>
+              </div>
+            </div>
+
+          </div>
 
         </div>
 

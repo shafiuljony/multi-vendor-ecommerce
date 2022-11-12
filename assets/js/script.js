@@ -91,30 +91,6 @@ for (let i = 0; i < accordionBtn.length; i++) {
 
 
 // //Get the button back to top
-// let mybutton = document.getElementById("btn-back-to-top");
-
-// // When the user scrolls down 20px from the top of the document, show the button
-// window.onscroll = function () {
-//   scrollFunction();
-// };
-
-// function scrollFunction() {
-//   if (
-//     document.body.scrollTop > 20 ||
-//     document.documentElement.scrollTop > 20
-//   ) {
-//     mybutton.style.display = "block";
-//   } else {
-//     mybutton.style.display = "none";
-//   }
-// }
-// // When the user clicks on the button, scroll to the top of the document
-// mybutton.addEventListener("click", backToTop);
-
-// function backToTop() {
-//   document.body.scrollTop = 0;
-//   document.documentElement.scrollTop = 0;
-// }
 
 const backToTopButton = document.querySelector("#back-to-top-btn");
 
@@ -141,9 +117,6 @@ function scrollFunction() {
 
 backToTopButton.addEventListener("click", smoothScrollBackToTop);
 
-// function backToTop() {
-//   window.scrollTo(0, 0);
-// }
 
 function smoothScrollBackToTop() {
   const targetPosition = 0;
@@ -168,3 +141,24 @@ function easeInOutCubic(t, b, c, d) {
 	t -= 2;
 	return c/2*(t*t*t + 2) + b;
 };
+
+
+// mini cart elements
+const cartBtn = document.getElementById("cart-btn");
+const cartSidebar = document.getElementById("cart-sidebar");
+const closeBtn = document.getElementById("close-btn");
+
+cartBtn.addEventListener("click", () => {
+  cartSidebar.classList.add("show");
+});
+
+closeBtn.addEventListener("click", () => {
+  cartSidebar.classList.remove("show");
+});
+
+// document.addEventListener('mouseup', function(e) {
+//   var outsiteCllick = document.getElementById('cart-sidebar');
+//   if (!outsiteCllick.contains(e.target)) {
+//     outsiteCllick.style.display = 'none';
+//   }
+// });
