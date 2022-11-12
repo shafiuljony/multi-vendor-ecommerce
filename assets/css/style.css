@@ -78,7 +78,16 @@
   box-sizing: border-box;
 }
 
+.container{
+  padding-right:0px !important; 
+  padding-left: 0px !important;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+
 a { text-decoration: none; }
+a:hover { text-decoration: none !important; }
 
 li { list-style: none; }
 
@@ -183,7 +192,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   text-align:center; 
   position:relative; 
   z-index:5; 
-  background-color: var(--eerie-black);
+  background-color: var(--salmon-pink);
 }
 .notification-bar__message { 
   color: var(--white); 
@@ -834,7 +843,8 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   transition: var(--transition-timing);
 }
 
-.banner-btn:hover { background: var(--eerie-black); }
+.banner-btn:hover { background: var(--eerie-black);
+color: var(--white); }
 
 
 
