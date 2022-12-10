@@ -96,6 +96,7 @@ button {
   font: inherit;
   border: none;
   cursor: pointer;
+  outline: none;
 }
 
 img, ion-icon, button, a { display: block; }
@@ -200,7 +201,7 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   text-transform:uppercase; 
   font-size:12px; 
   padding:10px 30px; 
-  display:block; 
+  display:inline-block; 
 }
 .notification-bar__message:hover, 
 .notification-bar__message:active, 
@@ -234,14 +235,13 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   position: fixed;
   bottom: 20px;
   right: 20px;
-  font-size: 26px;
+  font-size: 2rem;
   width: 50px;
   height: 50px;
   background-color: var(--white);
   color: var(--salmon-pink);
   cursor: pointer;
   outline: none;
-  padding: 9px;
   border: 3px solid var(--salmon-pink);
   border-radius: 50%;
   transition-duration: 0.2s;
@@ -500,9 +500,8 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   top: 10px;
   right: 10px;
   color: var(--sonic-silver);
+  outline: none !important;
 }
-
-.toast-close-btn ion-icon { --ionicon-stroke-width: 50px; }
 
 .toast-banner {
   width: 70px;
@@ -611,7 +610,18 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   font-size: 26px;
   color: var(--eerie-black);
   padding: 10px;
+  outline: none;
 }
+svg.svg-inline--fa.fa-user,
+svg.svg-inline--fa.fa-heart,
+svg.svg-inline--fa.fa-bag-shopping,
+svg.svg-inline--fa.fa-shop,
+svg.svg-inline--fa.fa-grip-vertical,
+svg.svg-inline--fa.fa-house,
+svg.svg-inline--fa.fa-bars
+{
+  color: var(--salmon-pink);
+} 
 
 .mobile-bottom-navigation .count {
   background: var(--bittersweet);
@@ -1939,7 +1949,9 @@ footer {
   .banner-text b { font-size: var(--fs-2); }
 
   .banner-btn { padding: 7px 20px; }
-
+  .seller-text{
+    color: var(--salmon-pink);
+  }
 
 
   /**
@@ -2315,11 +2327,14 @@ footer {
     color: var(--onyx);
     padding: 5px;
   }
+  .action-btn{
+    outline: none;
+  }
 
   .header-user-actions .count {
     position: absolute;
-    top: -2px;
-    right: -3px;
+    /* top: -2px; */
+    right: -4px;
     background: var(--bittersweet);
     color: var(--white);
     font-size: 12px;
@@ -2336,8 +2351,8 @@ footer {
 .site-header__cart .icon { font-size:22px; text-decoration:none; }
 .site-header__cart-count { 
   position: absolute;
-  top: -2px;
-  right: -3px;
+  top: 10px;
+  right: -2px;
   background: var(--bittersweet);
   color: var(--white);
   font-size: 12px;

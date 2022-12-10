@@ -214,31 +214,6 @@
 		$(this).parent().next().slideToggle();
     });
 	
-	
-	/*-----------------------------------------
-	  10.1 Homepage Slideshow -----------------
-	  -----------------------------------------*/
-	  function home_slider(){
-		 $('.home-slideshow').slick({
-			dots: false,
-			infinite: true,
-			slidesToShow: 1,
-			slidesToScroll: 1,
-			fade: true,
-			arrows: true,
-			autoplay: true,
-			autoplaySpeed: 4000,
-			lazyLoad: 'ondemand'
-		  });
-	  }
-	  home_slider();
-	
-	// Full Size Banner on the Any Screen
-	$(window).resize(function() {
-		var bodyheight = $(this).height() - 20;
-		$(".sliderFull .bg-size").height(bodyheight);
-	}).resize();
-	
 	/*-----------------------------------------
 	  10.2 Product Slider Slick ---------------
 	  -----------------------------------------*/

@@ -141,13 +141,3 @@ function easeInOutCubic(t, b, c, d) {
 	t -= 2;
 	return c/2*(t*t*t + 2) + b;
 };
-
-// initilizing swipper
-
-const swiper = document.querySelector('.swiper').swiper;
-
-// Now you can use all slider methods like
-// swiper.allowSlideNext(true);
-// swiper.allowSlidePrev(true);
-swiper.loopCreate()
-swiper.slideNext(true);
