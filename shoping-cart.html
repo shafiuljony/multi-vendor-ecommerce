@@ -31,12 +31,113 @@
     rel="stylesheet">
 
 </head>
+
 <body>
 
 
-    <div id="preloader">
+  <div id="preloader">
     
   </div>
+
+  <!--Promotion Bar-->
+  <div class="notification-bar ">
+    <a href="#" class="notification-bar__message">20% off your very first purchase, use promo code: Ebay</a>
+    <i class="fa-solid fa-xmark"></i>
+  </div>
+    <!--End Promotion Bar-->
+      
+
+  <div class="overlay" data-overlay></div>
+
+  <!--
+    - MODAL
+  -->
+
+  <div class="modal" data-modal>
+
+    <div class="modal-close-overlay" data-modal-overlay></div>
+
+    <div class="modal-content">
+
+      <button class="modal-close-btn" data-modal-close>
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="newsletter-img">
+        <img src="./assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
+      </div>
+
+      <div class="newsletter">
+
+        <form action="#">
+
+          <div class="newsletter-header">
+
+            <h3 class="newsletter-title">Subscribe Newsletter.</h3>
+
+            <p class="newsletter-desc">
+              Subscribe the <b>Anon</b> to get latest products and discount update.
+            </p>
+
+          </div>
+
+          <input type="email" name="email" class="email-field" placeholder="Email Address" required>
+
+          <button type="submit" class="btn-newsletter">Subscribe</button>
+
+        </form>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--
+    - NOTIFICATION TOAST
+  -->
+
+  <div class="notification-toast" data-toast>
+
+    <button class="toast-close-btn " data-toast-close>
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <div class="toast-banner">
+      <img src="./assets/images/products/jewellery-1.jpg" alt="Rose Gold Earrings" width="80" height="70">
+    </div>
+
+    <div class="toast-detail">
+
+      <p class="toast-message">
+        Someone in new just bought
+      </p>
+
+      <p class="toast-title">
+        Rose Gold Earrings
+      </p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">2 Minutes</time> ago
+      </p>
+
+    </div>
+
+  </div>
+
+  
+
+
+  <!-- Back to top button -->
+    <button type="button" class="back-to-top" id="back-to-top-btn">
+      <i class="fa-solid fa-caret-up"></i>
+    </button>
+
+
 
   <!--
     - HEADER
@@ -87,7 +188,7 @@
 
           <select name="currency">
 
-            <option value="tk">BDT &#2547;  </option>
+            <option value="TK">BDT TK  </option>
             <option value="usd">USD &dollar;</option>
 
           </select>
@@ -173,7 +274,7 @@
                               </div>
                               <div class="priceRow">
                                 <div class="product-price">
-                                    <span class="money">&#2547;  590.00 </span>
+                                    <span class="money">TK  590.00 </span>
                                   </div>
                                </div>
                       </div>
@@ -197,7 +298,7 @@
                               </div>
                                <div class="priceRow">
                                   <div class="product-price">
-                                      <span class="money">&#2547;  990.00 </span>
+                                      <span class="money">TK  990.00 </span>
                                   </div>
                               </div>
                           </div>
@@ -205,7 +306,7 @@
                   </ul>
                   <div class="total">
                     <div class="total-in">
-                        <span class="label">Cart Subtotal:</span><span class="product-price"><span class="money">&#2547;  1580.00 </span></span>
+                        <span class="label">Cart Subtotal:</span><span class="product-price"><span class="money">TK  1580.00 </span></span>
                       </div>
                        <div class="buttonSet text-center">
                           <a href="cart.html" class="btn btn-secondary btn--small">View Cart</a>
@@ -757,49 +858,141 @@
 
   </header>
 
+  <!--Body Content-->
   
 
+  <div class="container cartBody">
 
-  <section class="vh-100" style="background-color: #eee;">
-    <div class="container h-100">
-      <div class="row d-flex justify-content-center align-items-center h-100">
-        <div class="col-lg-12 col-xl-11">
-          <div class="text-black">
-            <div class="card-body">
-              <div class="row justify-content-center">
-                <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
-  
-                  <!-- <p class="text-center h1 fw-bold mx-1 mx-md-4"><img src="./assets/images/logo/favicon.ico" alt="" width="50px" height="50px"></p> -->
-                  <p class="text-center h1 fw-bold mx-1 mx-md-4 ">Login</p>
-                  <form class="mx-1 mx-md-4">
-          
-                    <div class="form-outline mb-4">
-                      <input type="email" id="form2Example18" class="form-control form-control-lg" />
-                      <label class="form-label" for="form2Example18">Email address</label>
-                    </div>
-                    
-                    <div class="form-outline mb-4">
-                      <input type="password" id="form2Example28" class="form-control form-control-lg" />
-                      <label class="form-label" for="form2Example28">Password</label>
-                    </div>
+		<section id="cart"> 
+			<article class="product">
+				<header>
+					<a class="remove">
+						<img src="./assets/images/products/clothes-1.jpg" alt="">
 
-                    <div class="pt-1 mb-4">
-                      <button class="btn btn-info btn-lg btn-block" type="button">Login</button>
-                    </div>
-                  
-                    <p class="small pb-lg-2"><a class="text-muted" href="#!">Forgot password?</a></p>
-                    <p>Don't have an account? <a href="register.html" class="link-info">Register here</a></p>
-                  </form>
-  
-                </div>
-                
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+						<h3>Remove product</h3>
+					</a>
+				</header>
+
+				<div class="content">
+
+					<h1>Air Jordan 10 “Teal Graffiti” Custom</h1>
+
+              Transforming a classic colorway into an Air Jordan 10 “Teal Graffiti” Custom that sports an Air Tech Challenge-inspired print throughout the upper, complementing the Graffiti print.
+
+					<div title="You have selected this product to be shipped in the color yellow." style="top: 0" class="color yellow"></div>
+					<div style="top: 43px" class="type small">Size 11.5</div>
+				</div>
+
+				<footer class="content">
+					<span class="qt-minus">-</span>
+					<span class="qt">2</span>
+					<span class="qt-plus">+</span>
+
+					<h2 class="full-price">
+						690.98
+					</h2>
+
+					<h2 class="price">
+						340.99
+					</h2>
+				</footer>
+			</article>
+
+			<article class="product">
+				<header>
+					<a class="remove">
+						<img src="./assets/images/products/clothes-2.jpg" alt="">
+
+						<h3>Remove product</h3>
+					</a>
+				</header>
+
+				<div class="content">
+
+					<h1>Air Jordan 5 “Noah's Ark"</h1>
+
+          Air Jordan 5 “Noah’s Ark” is certainly one of the most amazing customs he has ever created. The sneaker is inspired by the events within the story of Noah’s Ark, utilizing various animal prints.
+
+					<div title="You have selected this product to be shipped in the color red." style="top: 0" class="color red"></div>
+					<div title="You have selected this product to be shipped sized Small."  style="top: 43px" class="type small">Size 12</div>
+				</div>
+
+				<footer class="content">
+					
+					<span class="qt-minus">-</span>
+					<span class="qt">1</span>
+					<span class="qt-plus">+</span>
+
+					<h2 class="full-price">
+						790.99
+					</h2>
+
+					<h2 class="price">
+						790.99
+					</h2>
+				</footer>
+			</article>
+
+			<article class="product">
+				<header>
+					<a class="remove">
+						<img src="./assets/images/products/clothes-3.jpg" alt="">
+
+						<h3>Remove product</h3>
+					</a>
+				</header>
+
+				<div class="content">
+
+					<h1>Air Jordan 3 “Miami Nights” Custom</h1>
+
+The custom transforms the original Crimson base into a well received custom viewable above so take a look at the Air Jordan 3 “Miami Nights” Custom and inquire for your own pair.
+
+					<div title="You have selected this product to be shipped in the color blue." style="top: 0" class="color blue"></div>
+					<div style="top: 43px" class="type small">Large</div>
+				</div>
+
+				<footer class="content">
+					
+					<span class="qt-minus">-</span>
+					<span class="qt">3</span>
+					<span class="qt-plus">+</span>
+
+					<h2 class="full-price">
+						530.99
+					</h2>
+
+					<h2 class="price">
+						300.99
+					</h2>
+				</footer>
+			</article>
+
+		</section>
+
+	</div>
+
+	<div id="site-footer">
+		<div class="container clearfix">
+
+			<div class="left">
+				<h2 class="subtotal">Subtotal: <span>1630.96</span> TK</h2>
+				<h3 class="tax">Taxes (5%): <span>80.2</span> TK</h3>
+				<h3 class="shipping">Shipping: <span>50.00</span> TK</h3>
+			</div>
+
+			<div class="right">
+				<h1 class="total">Total: <span>1770.16</span> TK</h1>
+				<a class="checkout-btn" href="checkout.html">Checkout</a>
+			</div>
+
+		</div>
+	</div>
+
+<!--End Body Content-->
+
+
+
 
 
   <!--
@@ -1008,29 +1201,28 @@
 
           <li class="footer-nav-item flex">
             <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
+              <i class="fa-solid fa-location-dot"></i>
             </div>
 
             <address class="content">
-              419 State 414 Rte
-              Beaver Dams, New York(NY), 14812, USA
+              221/B
+              Muradpur Chattogram, 
             </address>
           </li>
 
           <li class="footer-nav-item flex">
             <div class="icon-box">
-              <ion-icon name="call-outline"></ion-icon>
+              <i class="fa-solid fa-phone"></i>
             </div>
 
-            <a href="tel:+607936-8058" class="footer-nav-link">(607) 936-8058</a>
+            <a href="tel:+8801558947938" class="footer-nav-link">(880) 1558947938</a>
           </li>
 
           <li class="footer-nav-item flex">
             <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
+              <i class="fa-solid fa-envelope"></i>
             </div>
-
-            <a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
+            <a href="mailto:anaonedu@gmail.com" class="footer-nav-link">anaonedu@gmail.com</a>
           </li>
 
         </ul>
@@ -1046,25 +1238,25 @@
 
               <li class="footer-nav-item">
                 <a href="#" class="footer-nav-link">
-                  <ion-icon name="logo-facebook"></ion-icon>
+                  <i class="fa-brands fa-facebook"></i>
                 </a>
               </li>
 
               <li class="footer-nav-item">
                 <a href="#" class="footer-nav-link">
-                  <ion-icon name="logo-twitter"></ion-icon>
+                  <i class="fa-brands fa-twitter"></i>
                 </a>
               </li>
 
               <li class="footer-nav-item">
                 <a href="#" class="footer-nav-link">
-                  <ion-icon name="logo-linkedin"></ion-icon>
+                  <i class="fa-brands fa-linkedin"></i>
                 </a>
               </li>
 
               <li class="footer-nav-item">
                 <a href="#" class="footer-nav-link">
-                  <ion-icon name="logo-instagram"></ion-icon>
+                  <i class="fa-brands fa-instagram"></i>
                 </a>
               </li>
 
@@ -1093,18 +1285,120 @@
 
   </footer>
 
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
       <!-- Including Javascript -->
-      <script src="./assets/js/script.js"></script>
-      <script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
-      <script src="./assets/js/main.js"></script>
-      <script src="assets/js/bootstrap.bundle.min.js"></script>
-      <script src="assets/js/all.js"></script>
-      <script>
-        var loader = document.getElementById("preloader");
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/all.js"></script>
+
+
+  <script>
+    // shoping cart
+var check = false;
+
+function changeVal(el) {
+  var qt = parseFloat(el.parent().children(".qt").html());
+  var price = parseFloat(el.parent().children(".price").html());
+  var eq = Math.round(price * qt * 100) / 100;
+  
+  el.parent().children(".full-price").html( eq + "TK" );
+  
+  changeTotal();			
+}
+
+function changeTotal() {
+  
+  var price = 0;
+  
+  $(".full-price").each(function(index){
+    price += parseFloat($(".full-price").eq(index).html());
+  });
+  
+  price = Math.round(price * 100) / 100;
+  var tax = Math.round(price * 0.05 * 100) / 100
+  var shipping = parseFloat($(".shipping span").html());
+  var fullPrice = Math.round((price + tax + shipping) *100) / 100;
+  
+  if(price == 0) {
+    fullPrice = 0;
+  }
+  
+  $(".subtotal span").html(price);
+  $(".tax span").html(tax);
+  $(".total span").html(fullPrice);
+}
+
+$(document).ready(function(){
+  
+  $(".remove").click(function(){
+    var el = $(this);
+    el.parent().parent().addClass("removed");
+    window.setTimeout(
+      function(){
+        el.parent().parent().slideUp('fast', function() { 
+          el.parent().parent().remove(); 
+          if($(".product").length == 0) {
+            if(check) {
+              $("#cart").html("<h1>The shop does not function, yet!</h1><p>If you liked my shopping cart, please take a second and heart this Pen on <a href='https://codepen.io/ziga-miklic/pen/xhpob'>CodePen</a>. Thank you!</p>");
+            } else {
+              $("#cart").html("<h1>No products!</h1>");
+            }
+          }
+          changeTotal(); 
+        });
+      }, 200);
+  });
+  
+  $(".qt-plus").click(function(){
+    $(this).parent().children(".qt").html(parseInt($(this).parent().children(".qt").html()) + 1);
     
-        window.addEventListener("load", function(){
-          loader.style.display = 'none';
-        })
-      </script>
+    $(this).parent().children(".full-price").addClass("added");
+    
+    var el = $(this);
+    window.setTimeout(function(){el.parent().children(".full-price").removeClass("added"); changeVal(el);}, 150);
+  });
+  
+  $(".qt-minus").click(function(){
+    
+    child = $(this).parent().children(".qt");
+    
+    if(parseInt(child.html()) > 1) {
+      child.html(parseInt(child.html()) - 1);
+    }
+    
+    $(this).parent().children(".full-price").addClass("minused");
+    
+    var el = $(this);
+    window.setTimeout(function(){el.parent().children(".full-price").removeClass("minused"); changeVal(el);}, 150);
+  });
+  
+  window.setTimeout(function(){$(".is-open").removeClass("is-open")}, 1200);
+  
+  $(".btn").click(function(){
+    check = true;
+    $(".remove").click();
+  });
+});
+  </script>
+
+  <script>
+    var loader = document.getElementById("preloader");
+
+    window.addEventListener("load", function(){
+      loader.style.display = 'none';
+    })
+  </script>
+
 </body>
+
 </html>

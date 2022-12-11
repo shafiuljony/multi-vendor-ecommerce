@@ -34,6 +34,11 @@
 
 <body>
 
+
+  <div class="preloader" id="preloader">
+    
+  </div>
+
   <!--Promotion Bar-->
   <div class="notification-bar ">
     <a href="#" class="notification-bar__message">20% off your very first purchase, use promo code: Ebay</a>
@@ -3181,12 +3186,12 @@
               <a href="#" class="service-item">
 
                 <div class="service-icon">
-                  <i class="fa-solid fa-ship"></i>
+                  <i class="fa-solid fa-truck-fast"></i>
                 </div>
 
                 <div class="service-content">
 
-                  <h3 class="service-title">Worldwide Delivery</h3>
+                  <h3 class="service-title">Deliver anywhere in Bangladesh</h3>
                   <p class="service-desc">For Order Over &#2547; 100</p>
 
                 </div>
@@ -3202,7 +3207,7 @@
                 <div class="service-content">
               
                   <h3 class="service-title">Next Day delivery</h3>
-                  <p class="service-desc">UK Orders Only</p>
+                  <p class="service-desc">Dhaka Orders Only</p>
               
                 </div>
               
@@ -3226,7 +3231,7 @@
               <a href="#" class="service-item">
               
                 <div class="service-icon">
-                  <ion-icon name="arrow-undo-outline"></ion-icon>
+                  <i class="fa-solid fa-right-left"></i>
                 </div>
               
                 <div class="service-content">
@@ -3682,7 +3687,7 @@
   <script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
   <script src="./assets/js/main.js"></script>
   <script src="./assets/js/swiper-bundle.min.js"></script>
-  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/all.js"></script>
 
   <!-- Initialize Swiper -->
@@ -3705,12 +3710,13 @@
       },
     });
   </script>
+  <script>
+    var loader = document.getElementById("preloader");
 
-  <!--
-    - ionicon link
-  -->
-  <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+    window.addEventListener("load", function(){
+      loader.style.display = 'none';
+    })
+  </script>
 
 </body>
 
