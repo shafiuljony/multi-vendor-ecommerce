@@ -99,7 +99,7 @@ button {
   outline: none !important;
 }
 
-img, i, button, a { display: block; }
+img, svg, button, a { display: block; }
 
 span { display: inline-block; }
 
