@@ -96,10 +96,10 @@ button {
   font: inherit;
   border: none;
   cursor: pointer;
-  outline: none;
+  outline: none !important;
 }
 
-img, ion-icon, button, a { display: block; }
+img, i, button, a { display: block; }
 
 span { display: inline-block; }
 
