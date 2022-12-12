@@ -1888,6 +1888,16 @@ footer {
 
 @media (min-width: 480px) {
 
+  /* 
+    -- shoping cart 
+   */
+
+   /* #cart .product img {
+    height: 10rem;
+    width: 10rem;
+  } */
+
+
   /**
    * #CUSTOM PROPERTY
    */
@@ -1921,6 +1931,7 @@ footer {
     color: var(--sonic-silver);
     font-size: var(--fs-9);
     text-transform: uppercase;
+    text-align: center;
   }
 
   .header-alert-news b { font-weight: var(--weight-500); }
@@ -1993,7 +2004,6 @@ footer {
   .cta-text { --fs-7: 1rem; }
 
   .cta-btn { --fs-9: 1rem; }
-
 
 
   /**
@@ -3203,12 +3213,12 @@ nav .brand-logo {
 
 .input-field {
   margin: 0;
+}
 
-  input[type="number"]::-webkit-inner-spin-button,
-  input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
+.input-field input[type="number"]::-webkit-inner-spin-button,
+.input-field input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 [type="checkbox"].filled-in:checked+span:not(.lever):after {
@@ -3254,9 +3264,10 @@ nav .brand-logo {
   text-transform: none !important;
   display: inline-table;
 
-  .left {
-    margin-right: 5px !important;
-  }
+  
+}
+.btn-credit-card.left {
+  margin-right: 5px !important;
 }
 
 .payment-info {

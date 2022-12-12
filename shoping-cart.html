@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anon - eCommerce Website</title>
+  <title>Anon | Ecommerce Shoping-cart</title>
 
   <!--
     - favicon
@@ -19,8 +19,8 @@
   <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css";
 
   <!-- bootstrap and fontawsome css link -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/all.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/all.css">
  
 
   <!-- google font link--->
@@ -38,13 +38,6 @@
   <div id="preloader">
     
   </div>
-
-  <!--Promotion Bar-->
-  <div class="notification-bar ">
-    <a href="#" class="notification-bar__message">20% off your very first purchase, use promo code: Ebay</a>
-    <i class="fa-solid fa-xmark"></i>
-  </div>
-    <!--End Promotion Bar-->
       
 
   <div class="overlay" data-overlay></div>
@@ -223,7 +216,6 @@
         <a href="#" class="header-logo">
           <img src="./assets/images/logo/logo.svg" alt="Anon's logo" width="120" height="36">
         </a>
-
         <div class="header-search-container">
 
           <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
@@ -889,11 +881,11 @@
 					<span class="qt-plus">+</span>
 
 					<h2 class="full-price">
-						690.98
+						680.00
 					</h2>
 
 					<h2 class="price">
-						340.99
+						340.00
 					</h2>
 				</footer>
 			</article>
@@ -924,11 +916,11 @@
 					<span class="qt-plus">+</span>
 
 					<h2 class="full-price">
-						790.99
+						790.00
 					</h2>
 
 					<h2 class="price">
-						790.99
+						790.00
 					</h2>
 				</footer>
 			</article>
@@ -959,11 +951,11 @@ The custom transforms the original Crimson base into a well received custom view
 					<span class="qt-plus">+</span>
 
 					<h2 class="full-price">
-						530.99
+						900.00
 					</h2>
 
 					<h2 class="price">
-						300.99
+						300.00
 					</h2>
 				</footer>
 			</article>
@@ -976,13 +968,13 @@ The custom transforms the original Crimson base into a well received custom view
 		<div class="container clearfix">
 
 			<div class="left">
-				<h2 class="subtotal">Subtotal: <span>1630.96</span> TK</h2>
-				<h3 class="tax">Taxes (5%): <span>80.2</span> TK</h3>
-				<h3 class="shipping">Shipping: <span>50.00</span> TK</h3>
+				<h2 class="subtotal">Subtotal: <span>2370.00</span> TK</h2>
+				<h3 class="tax">Taxes (5%): <span>118.5</span> TK</h3>
+				<h3 class="shipping">Shipping: <span>80.00</span> TK</h3>
 			</div>
 
 			<div class="right">
-				<h1 class="total">Total: <span>1770.16</span> TK</h1>
+				<h1 class="total">Total: <span>2568.5 </span> TK</h1>
 				<a class="checkout-btn" href="checkout.html">Checkout</a>
 			</div>
 
@@ -1294,17 +1286,12 @@ The custom transforms the original Crimson base into a well received custom view
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
-  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/vendor/jquery-3.3.1.min.js"></script>
   <script src="./assets/js/swiper-bundle.min.js"></script>
-  <script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
-      <!-- Including Javascript -->
-  <script src="assets/js/bootstrap.min.js"></script>
-  <script src="assets/js/all.js"></script>
-
-
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/all.js"></script>
   <script>
-    // shoping cart
-var check = false;
+    var check = false;
 
 function changeVal(el) {
   var qt = parseFloat(el.parent().children(".qt").html());

@@ -19,8 +19,8 @@
   <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css";
 
   <!-- bootstrap and fontawsome css link -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/all.css">
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/all.css">
  
 
   <!-- google font link--->
@@ -220,7 +220,7 @@
 
       <div class="container">
 
-        <a href="#" class="header-logo">
+        <a href="index.html" class="header-logo">
           <img src="./assets/images/logo/logo.svg" alt="Anon's logo" width="120" height="36">
         </a>
 
@@ -309,7 +309,7 @@
                         <span class="label">Cart Subtotal:</span><span class="product-price"><span class="money">&#2547;  1580.00 </span></span>
                       </div>
                        <div class="buttonSet text-center">
-                          <a href="cart.html" class="btn btn-secondary btn--small">View Cart</a>
+                          <a href="shoping-cart.html" class="btn btn-secondary btn--small">View Cart</a>
                           <a href="checkout.html" class="btn btn-secondary btn--small">Checkout</a>
                       </div>
                   </div>
@@ -594,13 +594,13 @@
         <i class="fa-solid fa-bars"></i>
       </button>
 
-      <button class="action-btn">
+      <a class="action-btn" href="shoping-cart.html">
         <i class="fa-solid fa-bag-shopping"></i>
 
         <span class="count">0</span>
-      </button>
+      </a>
 
-      <button class="action-btn">
+      <button class="action-btn" >
         <i class="fa-solid fa-house"></i>
       </button>
 
@@ -3684,10 +3684,31 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
-  <script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
+  <script src="./assets/js/vendor/jquery-3.3.1.min.js"></script>
   <script src="./assets/js/swiper-bundle.min.js"></script>
-  <script src="assets/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/js/all.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/all.js"></script>
+
+  <script>
+    	 
+	 /*-----------------------------------------
+	  --Minicart Dropdown ---------------------
+	  ------------------------------------------ */
+	  function minicart_dropdown(){
+		$(".site-header__cart").on("click", function(i) {
+			i.preventDefault();
+			$("#header-cart").slideToggle();
+		});
+		// Hide Cart on document click
+		$("body").on("click", function(event ) {
+		  var $target = $(event.target);
+		  if(!$target.parents().is(".site-cart") && !$target.is(".site-cart")){
+			$("body").find("#header-cart").slideUp();
+		  }
+		});
+	  }
+	 minicart_dropdown();
+  </script>
 
   <!-- Initialize Swiper -->
   <script>
