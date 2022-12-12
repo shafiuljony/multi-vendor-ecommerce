@@ -1724,6 +1724,7 @@ footer {
   padding: 30px 0;
 }
 
+
 .footer-category {
   margin-bottom: 30px;
   padding-bottom: 15px;
@@ -2687,7 +2688,9 @@ footer {
   .footer-bottom { margin-bottom: 0; }
 
 }
-
+.checkout-footer{
+  margin-top: 5rem;
+}
 
 
 

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anon - eCommerce Website</title>
+  <title>Anon-Ecommerce Website | checkout Page</title>
 
   <!--
     - favicon
@@ -18,7 +18,11 @@
 
   <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css";
 
-  <!-- bootstrap and fontawsome css link -->
+  
+    <!-- 
+      bootstrap and fontawsome css link  
+    -->
+  
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/all.css">
  
@@ -39,59 +43,6 @@
     
   </div>
 
-  <!--Promotion Bar-->
-  <div class="notification-bar ">
-    <a href="#" class="notification-bar__message">20% off your very first purchase, use promo code: Ebay</a>
-    <i class="fa-solid fa-xmark"></i>
-  </div>
-    <!--End Promotion Bar-->
-      
-
-  <div class="overlay" data-overlay></div>
-
-  <!--
-    - MODAL
-  -->
-
-  <div class="modal" data-modal>
-
-    <div class="modal-close-overlay" data-modal-overlay></div>
-
-    <div class="modal-content">
-
-      <button class="modal-close-btn" data-modal-close>
-        <i class="fa-solid fa-xmark"></i>
-      </button>
-
-      <div class="newsletter-img">
-        <img src="./assets/images/newsletter.png" alt="subscribe newsletter" width="400" height="400">
-      </div>
-
-      <div class="newsletter">
-
-        <form action="#">
-
-          <div class="newsletter-header">
-
-            <h3 class="newsletter-title">Subscribe Newsletter.</h3>
-
-            <p class="newsletter-desc">
-              Subscribe the <b>Anon</b> to get latest products and discount update.
-            </p>
-
-          </div>
-
-          <input type="email" name="email" class="email-field" placeholder="Email Address" required>
-
-          <button type="submit" class="btn-newsletter">Subscribe</button>
-
-        </form>
-
-      </div>
-
-    </div>
-
-  </div>
 
 
 
@@ -873,32 +824,32 @@
               <h6 class="my-0">Product name</h6>
               <small class="text-muted">Brief description</small>
             </div>
-            <span class="text-muted">$12</span>
+            <span class="text-muted">Tk 1200</span>
           </li>
           <li class="list-group-item d-flex justify-content-between lh-condensed">
             <div>
               <h6 class="my-0">Second product</h6>
               <small class="text-muted">Brief description</small>
             </div>
-            <span class="text-muted">$8</span>
+            <span class="text-muted">Tk 800</span>
           </li>
           <li class="list-group-item d-flex justify-content-between lh-condensed">
             <div>
               <h6 class="my-0">Third item</h6>
               <small class="text-muted">Brief description</small>
             </div>
-            <span class="text-muted">$5</span>
+            <span class="text-muted">Tk 500</span>
           </li>
           <li class="list-group-item d-flex justify-content-between bg-light">
             <div class="text-success">
               <h6 class="my-0">Promo code</h6>
               <small>EXAMPLECODE</small>
             </div>
-            <span class="text-success">-$5</span>
+            <span class="text-success">-Tk 50</span>
           </li>
           <li class="list-group-item d-flex justify-content-between">
-            <span>Total (USD)</span>
-            <strong>$20</strong>
+            <span>Total (TK)</span>
+            <strong>Tk 2450</strong>
           </li>
         </ul>
   
@@ -967,23 +918,27 @@
   
           <div class="row">
             <div class="col-md-5 mb-3">
-              <label for="country">Country</label>
-              <select class="custom-select d-block w-100" id="country" required>
+              <label for="City">City</label>
+              <select class="custom-select d-block w-100" id="City" required>
                 <option value="">Choose...</option>
-                <option>United States</option>
+                <option>Chattogram</option>
+                <option>Dhaka</option>
+                <option>Barisal</option>
               </select>
               <div class="invalid-feedback">
-                Please select a valid country.
+                Please select a valid City.
               </div>
             </div>
             <div class="col-md-4 mb-3">
-              <label for="state">State</label>
-              <select class="custom-select d-block w-100" id="state" required>
+              <label for="area">Area</label>
+              <select class="custom-select d-block w-100" id="area" required>
                 <option value="">Choose...</option>
-                <option>California</option>
+                <option>New Market</option>
+                <option>Mirpur</option>
+                <option>kpr</option>
               </select>
               <div class="invalid-feedback">
-                Please provide a valid state.
+                Please provide a valid area.
               </div>
             </div>
             <div class="col-md-3 mb-3">
@@ -1018,7 +973,11 @@
             </div>
             <div class="custom-control custom-radio">
               <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
-              <label class="custom-control-label" for="paypal">PayPal</label>
+              <label class="custom-control-label" for="paypal">Bkash</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+              <label class="custom-control-label" for="paypal">Nagad</label>
             </div>
           </div>
           <div class="row">
@@ -1060,16 +1019,6 @@
       </div>
     </div>
   </div>
-
-
-  <footer class="my-5 pt-5 text-muted text-center text-small">
-    <p class="mb-1">&copy; 2017-2019 Company Name</p>
-    <ul class="list-inline">
-      <li class="list-inline-item"><a href="#">Privacy</a></li>
-      <li class="list-inline-item"><a href="#">Terms</a></li>
-      <li class="list-inline-item"><a href="#">Support</a></li>
-    </ul>
-  </footer>
 </div>
 
 <!--End Body Content-->
@@ -1082,7 +1031,7 @@
     - FOOTER
   -->
 
-  <!-- <footer>
+  <footer class="checkout-footer">
 
     <div class="footer-category">
 
@@ -1366,7 +1315,7 @@
 
     </div>
 
-  </footer> -->
+  </footer>
 
 
 
@@ -1377,12 +1326,8 @@
     - custom js link
   -->
   <script src="./assets/js/script.js"></script>
-  <script src="./assets/js/main.js"></script>
-  <script src="./assets/js/swiper-bundle.min.js"></script>
   <script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
-      <!-- Including Javascript -->
-  <script src="./assets/js/bootstrap.bundle.min.js"></script>
-  <script src="./assets/js/checkout.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/all.js"></script>
 
   <script>
