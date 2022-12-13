@@ -623,13 +623,8 @@ body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
   padding: 10px;
   outline: none;
 }
-svg.svg-inline--fa.fa-user,
-svg.svg-inline--fa.fa-heart,
-svg.svg-inline--fa.fa-bag-shopping,
-svg.svg-inline--fa.fa-shop,
-svg.svg-inline--fa.fa-grip-vertical,
-svg.svg-inline--fa.fa-house,
-svg.svg-inline--fa.fa-bars
+.seller-login svg,
+.action-btn svg
 {
   color: var(--salmon-pink);
 } 

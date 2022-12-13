@@ -86,10 +86,3 @@ const totalCalc = function () {
   payAmountBtn.textContent = total.toFixed(2);
 
 }
-
-const productCart = document.querySelector('[data-cart-product]')
-const productCartRemove = document.querySelector('[data-cart-product-remove]')
-
-productCartRemove.addEventListener('click', function(){
-  productCart.remove();
-})
