@@ -1928,6 +1928,19 @@ footer {
   color: inherit;
 }
 
+/* login page  */
+
+.loginbtn{
+  padding: 13px 25px;
+  border: 1px solid var(--salmon-pink);
+  color: var(--salmon-pink) ;
+  border-radius: var(--border-radius-md);
+}
+.loginbtn:hover {
+  background: var(--salmon-pink);
+  color: var(--white) !important;
+}
+
 
 
 
