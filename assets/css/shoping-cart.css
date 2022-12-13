@@ -133,18 +133,30 @@
     margin-top: 2rem;
   }
   .btn-heading{
-    background-color: var(--salmon-pink);
+    color: var(--salmon-pink);
     padding: 13px;
     border-radius: 50%;
+    border: 1px solid var(--salmon-pink);
+  }
+  .shoping .count {
+    position: absolute;
+    top: -3px;
+    right: -5px;
+    background: var(--bittersweet);
+    color: var(--spanish-gray);
+    font-size: 15px;
+    font-weight: var(--weight-500);
+    line-height: 1;
+    padding: 2px 4px;
+    border-radius: 20px;
+  }
+  .shoping:hover{
+    background-color: var(--salmon-pink);
+    color: var(--white);
   }
   .shoping{
     position: relative;
 
-  }
-  .shoping span{
-    position: absolute;
-    top: 1;
-    left: 2;
   }
   .topheadng a{
     color: var(--onyx);
@@ -384,12 +396,12 @@
   .btn-outline {
     padding: 10px 25px;
     border: 1px solid var(--salmon-pink);
-    color: var(--salmon-pink);
+    color: var(--salmon-pink) !important;
   }
   
   .btn-outline:hover {
     background: var(--salmon-pink);
-    color: var(--white);
+    color: var(--white) !important;
   }
   
   .amount { padding: 40px var(--px); }
