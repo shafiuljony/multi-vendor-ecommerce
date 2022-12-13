@@ -137,6 +137,9 @@ body::-webkit-scrollbar-thumb {
 
 body::-webkit-scrollbar-thumb:hover { background: hsl(0, 0%, 70%); }
 
+p{
+  margin-bottom: 0 !important;
+}
 
 
 
@@ -3155,9 +3158,9 @@ nav .brand-logo {
 }
 
 @media only screen and (min-width: 601px) {
-  .container {
+  /* .container {
     width: 90%;
-  }
+  } */
   .wrapper {
     margin-top: 65px;
   }
@@ -3168,9 +3171,9 @@ nav .brand-logo {
 }
 
 @media only screen and (min-width: 993px) {
-  .container {
+  /* .container {
     width: 90%;
-  }
+  } */
 }
 
 .row {
@@ -3376,8 +3379,6 @@ nav .brand-logo {
   /**
    * #REUSED STYLE 
    */
-
-  .container { max-width: 1350px; }
 
 
 
