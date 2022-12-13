@@ -1,88 +1,95 @@
 'use strict';
 
+// all initial elements
+const payAmountBtn = document.querySelector('#payAmount');
+const decrementBtn = document.querySelectorAll('#decrement');
+const quantityElem = document.querySelectorAll('#quantity');
+const incrementBtn = document.querySelectorAll('#increment');
+const priceElem = document.querySelectorAll('#price');
+const subtotalElem = document.querySelector('#subtotal');
+const taxElem = document.querySelector('#tax');
+const totalElem = document.querySelector('#total');
 
-var check = false;
 
-function changeVal(el) {
-  var qt = parseFloat(el.parent().children(".qt").html());
-  var price = parseFloat(el.parent().children(".price").html());
-  var eq = Math.round(price * qt * 100) / 100;
-  
-  el.parent().children(".full-price").html( eq + "TK" );
-  
-  changeTotal();			
+// loop: for add event on multiple `increment` & `decrement` button
+for (let i = 0; i < incrementBtn.length; i++) {
+
+  incrementBtn[i].addEventListener('click', function () {
+
+    // collect the value of `quantity` textContent,
+    // based on clicked `increment` button sibling.
+    let increment = Number(this.previousElementSibling.textContent);
+
+    // plus `increment` variable value by 1
+    increment++;
+
+    // show the `increment` variable value on `quantity` element
+    // based on clicked `increment` button sibling.
+    this.previousElementSibling.textContent = increment;
+
+    totalCalc();
+
+  });
+
+
+  decrementBtn[i].addEventListener('click', function () {
+
+    // collect the value of `quantity` textContent,
+    // based on clicked `decrement` button sibling.
+    let decrement = Number(this.nextElementSibling.textContent);
+
+    // minus `decrement` variable value by 1 based on condition
+    decrement <= 1 ? 1 : decrement--;
+
+    // show the `decrement` variable value on `quantity` element
+    // based on clicked `decrement` button sibling.
+    this.nextElementSibling.textContent = decrement;
+
+    totalCalc();
+
+  });
+
 }
 
-function changeTotal() {
-  
-  var price = 0;
-  
-  $(".full-price").each(function(index){
-    price += parseFloat($(".full-price").eq(index).html());
-  });
-  
-  price = Math.round(price * 100) / 100;
-  var tax = Math.round(price * 0.05 * 100) / 100
-  var shipping = parseFloat($(".shipping span").html());
-  var fullPrice = Math.round((price + tax + shipping) *100) / 100;
-  
-  if(price == 0) {
-    fullPrice = 0;
+
+
+// function: for calculating total amount of product price
+const totalCalc = function () {
+
+  // declare all initial variable
+  const tax = 0.05;
+  let subtotal = 0;
+  let totalTax = 0;
+  let total = 0;
+
+  // loop: for calculating `subtotal` value from every single product
+  for (let i = 0; i < quantityElem.length; i++) {
+
+    subtotal += Number(quantityElem[i].textContent) * Number(priceElem[i].textContent);
+
   }
-  
-  $(".subtotal span").html(price);
-  $(".tax span").html(tax);
-  $(".total span").html(fullPrice);
+
+  // show the `subtotal` variable value on `subtotalElem` element
+  subtotalElem.textContent = subtotal.toFixed(2);
+
+  // calculating the `totalTax`
+  totalTax = subtotal * tax;
+
+  // show the `totalTax` on `taxElem` element
+  taxElem.textContent = totalTax.toFixed(2);
+
+  // calcualting the `total`
+  total = subtotal + totalTax;
+
+  // show the `total` variable value on `totalElem` & `payAmountBtn` element
+  totalElem.textContent = total.toFixed(2);
+  payAmountBtn.textContent = total.toFixed(2);
+
 }
 
-$(document).ready(function(){
-  
-  $(".remove").click(function(){
-    var el = $(this);
-    el.parent().parent().addClass("removed");
-    window.setTimeout(
-      function(){
-        el.parent().parent().slideUp('fast', function() { 
-          el.parent().parent().remove(); 
-          if($(".product").length == 0) {
-            if(check) {
-              $("#cart").html("<h1>The shop does not function, yet!</h1><p>If you liked my shopping cart, please take a second and heart this Pen on <a href='https://codepen.io/ziga-miklic/pen/xhpob'>CodePen</a>. Thank you!</p>");
-            } else {
-              $("#cart").html("<h1>No products!</h1>");
-            }
-          }
-          changeTotal(); 
-        });
-      }, 200);
-  });
-  
-  $(".qt-plus").click(function(){
-    $(this).parent().children(".qt").html(parseInt($(this).parent().children(".qt").html()) + 1);
-    
-    $(this).parent().children(".full-price").addClass("added");
-    
-    var el = $(this);
-    window.setTimeout(function(){el.parent().children(".full-price").removeClass("added"); changeVal(el);}, 150);
-  });
-  
-  $(".qt-minus").click(function(){
-    
-    child = $(this).parent().children(".qt");
-    
-    if(parseInt(child.html()) > 1) {
-      child.html(parseInt(child.html()) - 1);
-    }
-    
-    $(this).parent().children(".full-price").addClass("minused");
-    
-    var el = $(this);
-    window.setTimeout(function(){el.parent().children(".full-price").removeClass("minused"); changeVal(el);}, 150);
-  });
-  
-  window.setTimeout(function(){$(".is-open").removeClass("is-open")}, 1200);
-  
-  $(".btn").click(function(){
-    check = true;
-    $(".remove").click();
-  });
-});
+const productCart = document.querySelector('[data-cart-product]')
+const productCartRemove = document.querySelector('[data-cart-product-remove]')
+
+productCartRemove.addEventListener('click', function(){
+  productCart.remove();
+})
