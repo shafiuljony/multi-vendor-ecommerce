@@ -25,6 +25,7 @@
     --spanish-gray: hsl(0, 0%, 62%);
     --quick-silver: hsl(0, 0%, 64%);
     --salmon-pink: hsl(353, 100%, 78%);
+    --bittersweet: hsl(0, 100%, 70%);
   
     /**
      * Typography
@@ -129,8 +130,9 @@
     display: flex;
     border-bottom: 1px solid var(--gainsboro);
     align-items: center;
-    justify-content: space-between;
-    margin-top: 2rem;
+    justify-content: space-around;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
   .btn-heading{
     color: var(--salmon-pink);
@@ -138,28 +140,29 @@
     border-radius: 50%;
     border: 1px solid var(--salmon-pink);
   }
+  .items-login{
+    display: flex;
+    gap: 5rem;
+  }
   .shoping .count {
     position: absolute;
     top: -3px;
     right: -5px;
     background: var(--bittersweet);
-    color: var(--spanish-gray);
+    color: var(--white);
     font-size: 15px;
     font-weight: var(--weight-500);
     line-height: 1;
     padding: 2px 4px;
     border-radius: 20px;
   }
-  .shoping:hover{
+  .btn-heading:hover{
     background-color: var(--salmon-pink);
     color: var(--white);
   }
   .shoping{
     position: relative;
 
-  }
-  .topheadng a{
-    color: var(--onyx);
   }
 
   .container {
@@ -394,9 +397,9 @@
   }
   
   .btn-outline {
-    padding: 10px 25px;
+    padding: 13px 25px;
     border: 1px solid var(--salmon-pink);
-    color: var(--salmon-pink) !important;
+    color: var(--salmon-pink) ;
   }
   
   .btn-outline:hover {
@@ -487,6 +490,10 @@
   @media (max-width: 567px) {
   
     :root { --px: 20px; }
+
+    .items-login{
+      gap: 1rem;
+    }
   
     .payment-method,
     .input-flex {
