@@ -1,6 +1,7 @@
 'use strict';
 
 // modal variables
+// const modal = document.querySelector('[data-modal]');
 const modal = document.querySelector('[data-modal]');
 const modalCloseBtn = document.querySelector('[data-modal-close]');
 const modalCloseOverlay = document.querySelector('[data-modal-overlay]');
@@ -17,8 +18,8 @@ modalCloseBtn.addEventListener('click', modalCloseFunc);
 
 
 // notification toast variables
-const notificationToast = document.querySelector('[data-toast]');
-const toastCloseBtn = document.querySelector('[data-toast-close]');
+const notificationToast = document.querySelector('.notification-toast');
+const toastCloseBtn = document.querySelector('.toast-close-btn');
 
 // notification toast eventListener
 toastCloseBtn.addEventListener('click', function () {
