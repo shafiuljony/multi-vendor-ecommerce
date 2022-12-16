@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anon-Login</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anon - eCommerce Website</title>
 
-     <!-- favicon  -->
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
 
-     <link rel="icon" href="./assets/images/logo/favicon.ico" type="image/x-icon">
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
 
-     <!-- Plugins CSS -->
-     <link rel="stylesheet" href="assets/css/plugins.css">
-     <!-- Bootstap CSS -->
-     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css";
+
+  <!-- bootstrap and fontawsome css link -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/all.css">
  
-     <!-- css link   -->
- 
-     <link rel="stylesheet" href="./assets/css/style.css" >
-     <link rel="perconnect" href="https://fonts.googleapis.com" >
-     <link rel="perconnect" href="https://fonts.gstatic.com" crossorigin >
-     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
- 
- 
+
+  <!-- google font link--->
+    
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
 </head>
 <body>
+
+
+    <div id="preloader">
+    
+  </div>
 
   <!--
     - HEADER
@@ -40,25 +52,25 @@
 
           <li>
             <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+              <i class="fa-brands fa-facebook"></i>
             </a>
           </li>
 
           <li>
             <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
+              <i class="fa-brands fa-twitter"></i>
             </a>
           </li>
 
           <li>
             <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
+              <i class="fa-brands fa-instagram"></i>
             </a>
           </li>
 
           <li>
             <a href="#" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
+              <i class="fa-brands fa-linkedin"></i>
             </a>
           </li>
 
@@ -75,7 +87,7 @@
 
           <select name="currency">
 
-            <option value="eur">BDT &#2547;</option>
+            <option value="tk">BDT &#2547;  </option>
             <option value="usd">USD &dollar;</option>
 
           </select>
@@ -88,19 +100,26 @@
 
           </select>
 
+          <a href="login.html">
+            <div class="seller-login ">
+              <i class="fa-solid fa-shop"></i></i>
+              <span class="seller-text">
+                Become a seller
+             </span> 
+            </div>
+          </a>
+
         </div>
 
       </div>
 
     </div>
 
-
-
     <div class="header-main">
 
       <div class="container">
 
-        <a href="#" class="header-logo">
+        <a href="index.html" class="header-logo">
           <img src="./assets/images/logo/logo.svg" alt="Anon's logo" width="120" height="36">
         </a>
 
@@ -109,26 +128,93 @@
           <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
 
           <button class="search-btn">
-            <ion-icon name="search-outline"></ion-icon>
+            <i class="fa-solid fa-magnifying-glass"></i>
           </button>
 
         </div>
 
         <div class="header-user-actions">
 
-          <button class="action-btn">
-            <ion-icon name="person-outline"></ion-icon>
-          </button>
-
-          <button class="action-btn">
-            <ion-icon name="heart-outline"></ion-icon>
+          <a class="action-btn" href="login.html">
+            <i class="fa-solid fa-user"></i>
+          </a>
+          
+          <a  class="action-btn " >
+            <i class="fa-solid fa-heart"></i>
             <span class="count">0</span>
-          </button>
+          </a>
 
-          <button class="action-btn">
-            <ion-icon name="bag-handle-outline"></ion-icon>
-            <span class="count">0</span>
-          </button>
+          <!-- mini site cart  -->
+          <div class="site-cart">
+            <a href="#" class="site-header__cart action-btn" title="Cart">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  <span id="CartCount" class="site-header__cart-count" data-cart-render="item_count">2</span>
+              </a>
+              <!--Minicart Popup-->
+              <div id="header-cart" class="block block-cart">
+                <ul class="mini-products-list">
+                      <li class="item">
+                        <a class="product-image" href="#">
+                          <img src="./assets/images/products/1.jpg" alt="baby fabric shoes" width="75" height="75"
+                          class="showcase-img">
+                        </a>
+                          <div class="product-details">
+                            <a href="#" class="remove"><i class="anm anm-times-l" aria-hidden="true"></i></a>
+                              <a href="#" class="edit-i remove"><i class="anm anm-edit" aria-hidden="true"></i></a>
+                              <a class="pName" href="cart.html">Baby fabric shoes</a>
+                              <div class="variant-cart">Black / XL</div>
+                              <div class="wrapQtyBtn">
+                                  <div class="qtyField">
+                                    <span class="label">Qty:</span>
+                                      <a class="qtyBtn minus" href="javascript:void(0);"><i class="fa anm anm-minus-r" aria-hidden="true"></i></a>
+                                      <input type="text" id="Quantity" name="quantity" value="1" class="product-form__input qty">
+                                      <a class="qtyBtn plus" href="javascript:void(0);"><i class="fa anm anm-plus-r" aria-hidden="true"></i></a>
+                                  </div>
+                              </div>
+                              <div class="priceRow">
+                                <div class="product-price">
+                                    <span class="money">&#2547;  590.00 </span>
+                                  </div>
+                               </div>
+                      </div>
+                      </li>
+                      <li class="item">
+                        <a class="product-image" href="#">
+                          <img src="./assets/images/products/shorts-1.jpg" alt="Better Basics French Terry Sweatshorts" class="product-img default" width="75" height="75">
+                          </a>
+                          <div class="product-details">
+                            <a href="#" class="remove"><i class="anm anm-times-l" aria-hidden="true"></i></a>
+                              <a href="#" class="edit-i remove"><i class="anm anm-edit" aria-hidden="true"></i></a>
+                              <a class="pName" href="cart.html">Better Basics French Terry Sweatshorts</a>
+                              <div class="variant-cart">Gray / XXL</div>
+                              <div class="wrapQtyBtn">
+                                  <div class="qtyField">
+                                    <span class="label">Qty:</span>
+                                      <a class="qtyBtn minus" href="javascript:void(0);"><i class="fa anm anm-minus-r" aria-hidden="true"></i></a>
+                                      <input type="text" id="Quantity" name="quantity" value="1" class="product-form__input qty">
+                                      <a class="qtyBtn plus" href="javascript:void(0);"><i class="fa anm anm-plus-r" aria-hidden="true"></i></a>
+                                  </div>
+                              </div>
+                               <div class="priceRow">
+                                  <div class="product-price">
+                                      <span class="money">&#2547;  990.00 </span>
+                                  </div>
+                              </div>
+                          </div>
+                      </li>
+                  </ul>
+                  <div class="total">
+                    <div class="total-in">
+                        <span class="label">Cart Subtotal:</span><span class="product-price"><span class="money">&#2547;  1580.00 </span></span>
+                      </div>
+                       <div class="buttonSet text-center">
+                          <a href="cart.html" class="btn btn-secondary btn--small">View Cart</a>
+                          <a href="checkout.html" class="btn btn-secondary btn--small">Checkout</a>
+                      </div>
+                  </div>
+              </div>
+              <!--End Minicart Popup-->
+          </div>
 
         </div>
 
@@ -404,27 +490,27 @@
     <div class="mobile-bottom-navigation">
 
       <button class="action-btn" data-mobile-menu-open-btn>
-        <ion-icon name="menu-outline"></ion-icon>
+        <i class="fa-solid fa-bars"></i>
       </button>
 
       <button class="action-btn">
-        <ion-icon name="bag-handle-outline"></ion-icon>
+        <i class="fa-solid fa-bag-shopping"></i>
 
         <span class="count">0</span>
       </button>
 
-      <button class="action-btn">
-        <ion-icon name="home-outline"></ion-icon>
-      </button>
+      <a class="action-btn" href="login.html">
+        <i class="fa-solid fa-user"></i>
+      </a>
 
       <button class="action-btn">
-        <ion-icon name="heart-outline"></ion-icon>
+        <i class="fa-solid fa-heart"></i>
 
         <span class="count">0</span>
       </button>
 
       <button class="action-btn" data-mobile-menu-open-btn>
-        <ion-icon name="grid-outline"></ion-icon>
+        <i class="fa-solid fa-grip-vertical"></i>
       </button>
 
     </div>
@@ -435,7 +521,7 @@
         <h2 class="menu-title">Menu</h2>
 
         <button class="menu-close-btn" data-mobile-menu-close-btn>
-          <ion-icon name="close-outline"></ion-icon>
+          <i class="fa-solid fa-circle-xmark"></i>
         </button>
       </div>
 
@@ -451,8 +537,10 @@
             <p class="menu-title">Men's</p>
 
             <div>
-              <ion-icon name="add-outline" class="add-icon"></ion-icon>
-              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+              <i class="fa-solid fa-plus add-outline"></i>
+              <!-- <i class="fa-solid fa-plus add-outline" name="add-outline"></i> -->
+              <i class="fa-solid fa-minus"></i>
+              <!-- <i class="fa-solid fa-minus" name="remove-outline"></i> -->
             </div>
           </button>
 
@@ -484,8 +572,8 @@
             <p class="menu-title">Women's</p>
 
             <div>
-              <ion-icon name="add-outline" class="add-icon"></ion-icon>
-              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-minus"></i>
             </div>
           </button>
 
@@ -517,8 +605,8 @@
             <p class="menu-title">Jewelry</p>
 
             <div>
-              <ion-icon name="add-outline" class="add-icon"></ion-icon>
-              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-minus"></i>
             </div>
           </button>
 
@@ -550,8 +638,8 @@
             <p class="menu-title">Perfume</p>
 
             <div>
-              <ion-icon name="add-outline" class="add-icon"></ion-icon>
-              <ion-icon name="remove-outline" class="remove-icon"></ion-icon>
+              <i class="fa-solid fa-plus"></i>
+              <i class="fa-solid fa-minus"></i>
             </div>
           </button>
 
@@ -588,7 +676,6 @@
       </ul>
 
       <div class="menu-bottom">
-
         <ul class="menu-category-list">
 
           <li class="menu-category">
@@ -629,7 +716,7 @@
               </li>
 
               <li class="submenu-category">
-                <a href="#" class="submenu-title">EUR &euro;</a>
+                <a href="#" class="submenu-title">EUR U+09F3</a>
               </li>
             </ul>
           </li>
@@ -640,25 +727,25 @@
 
           <li>
             <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+              <i class="fa-brands fa-facebook"></i>
             </a>
           </li>
 
           <li>
             <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
+              <i class="fa-brands fa-twitter"></i>
             </a>
           </li>
 
           <li>
             <a href="#" class="social-link">
-              <ion-icon name="logo-instagram"></ion-icon>
+              <i class="fa-brands fa-instagram"></i>
             </a>
           </li>
 
           <li>
             <a href="#" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
+              <i class="fa-brands fa-linkedin"></i>
             </a>
           </li>
 
@@ -673,39 +760,37 @@
   
 
 
-  <section class="vh-100" style="background-color: #eee;">
+  <section style="background-color: #eee;">
     <div class="container h-100">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-lg-12 col-xl-11">
-          <div class="text-black">
+          <div class="text-black ">
             <div class="card-body">
               <div class="row justify-content-center">
-                <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1">
+                <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1 bg-light my-4">
   
-                  <!-- <p class="text-center h1 fw-bold mx-1 mx-md-4"><img src="./assets/images/logo/favicon.ico" alt="" width="50px" height="50px"></p> -->
-                  <p class="text-center h1 fw-bold mx-1 mx-md-4 ">Login</p>
-                  <form class="mx-1 mx-md-4">
+
+                  <p class="text-center h1 fw-bold mx-1 mx-md-4 my-3 text-black-50">Login</p>
+                  <form class="mx-1 mx-md-4 mb-5">
           
-                    <div class="form-outline mb-4">
-                      <input type="email" id="form2Example18" class="form-control form-control-lg" />
-                      <label class="form-label" for="form2Example18">Email address</label>
+                    <div class="form-outline mb-2">
+                      <label for="email">Email</label>
+                      <input type="email" id="form2Example18" class="form-control form-control-lg fst-italic" placeholder=" Enter Your Email address" />
                     </div>
                     
-                    <div class="form-outline mb-4">
-                      <input type="password" id="form2Example28" class="form-control form-control-lg" />
-                      <label class="form-label" for="form2Example28">Password</label>
+                    <div class="form-outline mb-2">
+                      <label for="password">Password</label>
+                      <input type="password" id="form2Example28" class="form-control form-control-lg fst-italic"  placeholder="Enter Your Password"/>
                     </div>
 
-                    <div class="pt-1 mb-4">
-                      <button class="btn btn-info btn-lg btn-block" type="button">Login</button>
+                    <div class="pt-1 mb-3">
+                      <button class="loginbtn w-100 text-uppercase fs-6" type="button">Login</button>
                     </div>
                   
                     <p class="small pb-lg-2"><a class="text-muted" href="#!">Forgot password?</a></p>
-                    <p>Don't have an account? <a href="register.html" class="link-info">Register here</a></p>
+                    <p>Don't have an account? <a href="register.html" class=" text-black-50 ">Register here</a></p>
                   </form>
-  
-                </div>
-                
+                </div>    
               </div>
             </div>
           </div>
@@ -921,29 +1006,28 @@
 
           <li class="footer-nav-item flex">
             <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
+              <i class="fa-solid fa-location-dot"></i>
             </div>
 
             <address class="content">
-              419 State 414 Rte
-              Beaver Dams, New York(NY), 14812, USA
+              221/B
+              Muradpur Chattogram, 
             </address>
           </li>
 
           <li class="footer-nav-item flex">
             <div class="icon-box">
-              <ion-icon name="call-outline"></ion-icon>
+              <i class="fa-solid fa-phone"></i>
             </div>
 
-            <a href="tel:+607936-8058" class="footer-nav-link">(607) 936-8058</a>
+            <a href="tel:+8801558947938" class="footer-nav-link">(880) 1558947938</a>
           </li>
 
           <li class="footer-nav-item flex">
             <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
+              <i class="fa-solid fa-envelope"></i>
             </div>
-
-            <a href="mailto:example@gmail.com" class="footer-nav-link">example@gmail.com</a>
+            <a href="mailto:anaonedu@gmail.com" class="footer-nav-link">anaonedu@gmail.com</a>
           </li>
 
         </ul>
@@ -959,25 +1043,25 @@
 
               <li class="footer-nav-item">
                 <a href="#" class="footer-nav-link">
-                  <ion-icon name="logo-facebook"></ion-icon>
+                  <i class="fa-brands fa-facebook"></i>
                 </a>
               </li>
 
               <li class="footer-nav-item">
                 <a href="#" class="footer-nav-link">
-                  <ion-icon name="logo-twitter"></ion-icon>
+                  <i class="fa-brands fa-twitter"></i>
                 </a>
               </li>
 
               <li class="footer-nav-item">
                 <a href="#" class="footer-nav-link">
-                  <ion-icon name="logo-linkedin"></ion-icon>
+                  <i class="fa-brands fa-linkedin"></i>
                 </a>
               </li>
 
               <li class="footer-nav-item">
                 <a href="#" class="footer-nav-link">
-                  <ion-icon name="logo-instagram"></ion-icon>
+                  <i class="fa-brands fa-instagram"></i>
                 </a>
               </li>
 
@@ -1007,22 +1091,18 @@
   </footer>
 
 
-     <!-- js link  -->
-     <script src="./assets/js/script.js"></script>
-     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-     <script src="assets/js/vendor/jquery-3.3.1.min.js"></script>
-      <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
-      <script src="assets/js/vendor/jquery.cookie.js"></script>
-      <script src="assets/js/vendor/wow.min.js"></script>
       <!-- Including Javascript -->
-      <script src="assets/js/bootstrap.min.js"></script>
-      <script src="assets/js/plugins.js"></script>
-      <script src="assets/js/popper.min.js"></script>
-      <script src="assets/js/lazysizes.js"></script>
-      <script src="assets/js/main.js"></script>
+      <script src="./assets/js/script.js"></script>
+      <script src="./assets/js/vendor/jquery-3.3.1.min.js"></script>
+      <script src="./assets/js/swiper-bundle.min.js"></script>
+      <script src="./assets/js/bootstrap.bundle.min.js"></script>
+      <script src="./assets/js/all.js"></script>
       <script>
-       
+        var loader = document.getElementById("preloader");
+    
+        window.addEventListener("load", function(){
+          loader.style.display = 'none';
+        })
       </script>
 </body>
 </html>

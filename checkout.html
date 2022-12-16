@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anon - eCommerce Website</title>
+  <title>Anon | Ecommerce checkout</title>
 
   <!--
     - favicon
@@ -15,11 +15,16 @@
     - custom css link
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
+
   <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css";
 
-  <!-- bootstrap and fontawsome css link -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/all.css">
+  
+    <!-- 
+      bootstrap and fontawsome css link  
+    -->
+  
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/all.css">
  
 
   <!-- google font link--->
@@ -30,56 +35,123 @@
     rel="stylesheet">
 
 </head>
+
 <body>
-  <div class="preloader" id="preloader">
+
+
+  <div id="preloader">
     
   </div>
 
-    <!--
+
+
+
+
+
+  <!--
+    - NOTIFICATION TOAST
+  -->
+
+  <div class="notification-toast" data-toast>
+
+    <button class="toast-close-btn " data-toast-close>
+      <i class="fa-solid fa-xmark"></i>
+    </button>
+
+    <div class="toast-banner">
+      <img src="./assets/images/products/jewellery-1.jpg" alt="Rose Gold Earrings" width="80" height="70">
+    </div>
+
+    <div class="toast-detail">
+
+      <p class="toast-message">
+        Someone in new just bought
+      </p>
+
+      <p class="toast-title">
+        Rose Gold Earrings
+      </p>
+
+      <p class="toast-meta">
+        <time datetime="PT2M">2 Minutes</time> ago
+      </p>
+
+    </div>
+
+  </div>
+
+  
+
+
+  <!-- Back to top button -->
+    <button type="button" class="back-to-top" id="back-to-top-btn">
+      <i class="fa-solid fa-caret-up"></i>
+    </button>
+
+
+
+  <!--
     - HEADER
   -->
 
   <header>
+
     <div class="header-top">
+
       <div class="container">
+
         <ul class="header-social-container">
+
           <li>
             <a href="#" class="social-link">
               <i class="fa-brands fa-facebook"></i>
             </a>
           </li>
+
           <li>
             <a href="#" class="social-link">
               <i class="fa-brands fa-twitter"></i>
             </a>
           </li>
+
           <li>
             <a href="#" class="social-link">
               <i class="fa-brands fa-instagram"></i>
             </a>
           </li>
+
           <li>
             <a href="#" class="social-link">
               <i class="fa-brands fa-linkedin"></i>
             </a>
           </li>
+
         </ul>
+
         <div class="header-alert-news">
           <p>
             <b>Free Shipping</b>
             This Week Order Over - ৳ 500
           </p>
         </div>
+
         <div class="header-top-actions">
+
           <select name="currency">
+
             <option value="tk">BDT &#2547;  </option>
             <option value="usd">USD &dollar;</option>
+
           </select>
 
           <select name="language">
+
             <option value="bn-BD">Bangla</option>
             <option value="en-US">English</option>
+            
+
           </select>
+
           <a href="login.html">
             <div class="seller-login ">
               <i class="fa-solid fa-shop"></i></i>
@@ -88,11 +160,15 @@
              </span> 
             </div>
           </a>
+
         </div>
+
       </div>
+
     </div>
 
     <div class="header-main">
+
       <div class="container">
 
         <a href="index.html" class="header-logo">
@@ -102,6 +178,7 @@
         <div class="header-search-container">
 
           <input type="search" name="search" class="search-field" placeholder="Enter your product name...">
+
           <button class="search-btn">
             <i class="fa-solid fa-magnifying-glass"></i>
           </button>
@@ -190,71 +267,99 @@
               </div>
               <!--End Minicart Popup-->
           </div>
+
         </div>
+
       </div>
+
     </div>
 
     <nav class="desktop-navigation-menu">
+
       <div class="container">
+
         <ul class="desktop-menu-category-list">
+
           <li class="menu-category">
             <a href="index.html" class="menu-title">Home</a>
           </li>
+
           <li class="menu-category">
             <a href="#" class="menu-title">Categories</a>
+
             <div class="dropdown-panel">
+
               <ul class="dropdown-panel-list">
+
                 <li class="menu-title">
                   <a href="#">Electronics</a>
                 </li>
+
                 <li class="panel-list-item">
                   <a href="#">Desktop</a>
                 </li>
+
                 <li class="panel-list-item">
                   <a href="#">Laptop</a>
                 </li>
+
                 <li class="panel-list-item">
                   <a href="#">Camera</a>
                 </li>
+
                 <li class="panel-list-item">
                   <a href="#">Tablet</a>
                 </li>
+
                 <li class="panel-list-item">
                   <a href="#">Headphone</a>
                 </li>
+
                 <li class="panel-list-item">
                   <a href="#">
                     <img src="./assets/images/electronics-banner-1.jpg" alt="headphone collection" width="250"
                       height="119">
                   </a>
                 </li>
+
               </ul>
+
               <ul class="dropdown-panel-list">
+
                 <li class="menu-title">
                   <a href="#">Men's</a>
                 </li>
+
                 <li class="panel-list-item">
                   <a href="#">Formal</a>
                 </li>
+
                 <li class="panel-list-item">
                   <a href="#">Casual</a>
                 </li>
+
                 <li class="panel-list-item">
                   <a href="#">Sports</a>
                 </li>
+
                 <li class="panel-list-item">
                   <a href="#">Jacket</a>
                 </li>
+
                 <li class="panel-list-item">
                   <a href="#">Sunglasses</a>
                 </li>
+
                 <li class="panel-list-item">
                   <a href="#">
                     <img src="./assets/images/mens-banner.jpg" alt="men's fashion" width="250" height="119">
                   </a>
                 </li>
+
               </ul>
+
               <ul class="dropdown-panel-list">
+
                 <li class="menu-title">
                   <a href="#">Women's</a>
                 </li>
@@ -704,98 +809,240 @@
 
   </header>
 
+  <!--Body Content-->
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-4 order-md-2 mb-4">
+        <h4 class="d-flex justify-content-between align-items-center mb-3">
+          <span class="text-muted">Your cart</span>
+          <span class="badge badge-secondary badge-pill">3</span>
+        </h4>
+        <ul class="list-group mb-3">
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+              <h6 class="my-0">Product name</h6>
+              <small class="text-muted">Brief description</small>
+            </div>
+            <span class="text-muted">Tk 1200</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+              <h6 class="my-0">Second product</h6>
+              <small class="text-muted">Brief description</small>
+            </div>
+            <span class="text-muted">Tk 800</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between lh-condensed">
+            <div>
+              <h6 class="my-0">Third item</h6>
+              <small class="text-muted">Brief description</small>
+            </div>
+            <span class="text-muted">Tk 500</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between bg-light">
+            <div class="text-success">
+              <h6 class="my-0">Promo code</h6>
+              <small>EXAMPLECODE</small>
+            </div>
+            <span class="text-success">-Tk 50</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between">
+            <span>Total (TK)</span>
+            <strong>Tk 2450</strong>
+          </li>
+        </ul>
   
-
-
-
-    <section class="" style="background-color: #eee;">
-        <div class="container h-100">
-          <div class="row d-flex justify-content-center align-items-center h-100">
-            <div class="col-lg-12 col-xl-11">
-              <div class="text-black">
-                <div class="card-body">
-                  <div class="row justify-content-center">
-                    <div class="col-md-10 col-lg-6 col-xl-5 order-2 order-lg-1 bg-light my-4">
-                  
-                      <p class="text-center h1 fw-bold mx-1 mx-md-4 my-4 text-black-50">Sign up</p>
-      
-                      <form class="mx-1 mx-md-4 mb-5">
-      
-                        <div class="d-flex flex-row align-items-center mb-2 gap-2">
-                          <i class="fa-solid fa-user fs-4 mt-4"></i>
-                          <div class="form-outline flex-fill mb-0">
-                            <label for="name">Name</label>
-                            <input type="text" id="form3Example1c" class="form-control fst-italic" placeholder=" Enter Your Full name" />
-                          </div>
-                        </div>
-      
-                        <div class="d-flex flex-row align-items-center mb-2 gap-2">
-                          <i class="fa-solid fa-envelope fs-4 mt-4"></i>
-                          <div class="form-outline flex-fill mb-0">
-                            <label for="email">Email</label>
-                            <input type="email" id="form3Example3c" class="form-control fst-italic" placeholder="Enter Your Email Address" />
-                          </div>
-                        </div>
-                        
-                        <div class="d-flex flex-row align-items-center mb-2 gap-2">
-                            <i class="fa-solid fa-phone fs-4 mt-4"></i>
-                            <div class="form-outline flex-fill mb-0">
-                              <label for="number">Mobile Number</label>
-                              <input type="phone" id="form3Example3c" class="form-control fst-italic" placeholder="Enter Your Mobile Number" />
-                            </div>
-                          </div>
-        
-
-                        <div class="d-flex flex-row align-items-center mb-2 gap-2">
-                          <i class="fa-solid fa-lock fs-4 mt-4"></i>
-                          <div class="form-outline flex-fill mb-0">
-                            <label for="password">Password</label>
-                            <input type="password" id="form3Example4c" class="form-control fst-italic" placeholder="Enter Your Password" />
-                          </div>
-                        </div>
-      
-                        <div class="d-flex flex-row align-items-center mb-2 gap-2">
-                          <i class="fa-solid fa-key fs-4 mt-4"></i>
-                          <div class="form-outline flex-fill mb-0">
-                            <label for="password">Re-enter password</label>
-                            <input type="password" id="form3Example4cd" class="form-control fst-italic" placeholder="Re-Enter your password" />
-                          </div>
-                        </div>
-      
-                        <div class="form-check d-flex justify-content-center">
-                          <input class="form-check-input me-2 " type="checkbox" value="" id="form2Example3c" />
-                          <label class="form-check-label" for="form2Example3">
-                            I agree all statements in <a href="#!">Terms of service</a>
-                          </label>
-                        </div>
-      
-                        <div class="d-flex justify-content-center mx-4 my-2 ">
-                          <button type="button" class="loginbtn">Register</button>
-                        </div
-                      </form>
-      
-                    </div>
-                    
-                  </div>
-                </div>
+        <form class="card p-2">
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Promo code">
+            <div class="input-group-append">
+              <button type="submit" class="btn btn-secondary">Redeem</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="col-md-8 order-md-1">
+        <h4 class="mb-3">Billing address</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="firstName">First name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid first name is required.
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="lastName">Last name</label>
+              <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+              <div class="invalid-feedback">
+                Valid last name is required.
               </div>
             </div>
           </div>
-        </div>
-      </section>
-      
+  
+          <div class="mb-3">
+            <label for="username">Username</label>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text">@</span>
+              </div>
+              <input type="text" class="form-control" id="username" placeholder="Username" required>
+              <div class="invalid-feedback" style="width: 100%;">
+                Your username is required.
+              </div>
+            </div>
+          </div>
+  
+          <div class="mb-3">
+            <label for="email">Email <span class="text-muted">(Optional)</span></label>
+            <input type="email" class="form-control" id="email" placeholder="you@example.com">
+            <div class="invalid-feedback">
+              Please enter a valid email address for shipping updates.
+            </div>
+          </div>
+  
+          <div class="mb-3">
+            <label for="address">Address</label>
+            <input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+            <div class="invalid-feedback">
+              Please enter your shipping address.
+            </div>
+          </div>
+  
+          <div class="mb-3">
+            <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+            <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+          </div>
+  
+          <div class="row">
+            <div class="col-md-5 mb-3">
+              <label for="City">City</label>
+              <select class="custom-select d-block w-100 p-2 rounded-2" id="City" required>
+                <option value="">Choose...</option>
+                <option>Chattogram</option>
+                <option>Dhaka</option>
+                <option>Barisal</option>
+              </select>
+              <div class="invalid-feedback">
+                Please select a valid City.
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <label for="area">Area</label>
+              <select class="custom-select d-block w-100 p-2 rounded-2" id="area" required>
+                <option value="">Choose...</option>
+                <option>New Market</option>
+                <option>Mirpur</option>
+                <option>kpr</option>
+              </select>
+              <div class="invalid-feedback">
+                Please provide a valid area.
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="zip">Zip</label>
+              <input type="text" class="form-control" id="zip" placeholder="" required>
+              <div class="invalid-feedback">
+                Zip code required.
+              </div>
+            </div>
+          </div>
+          <hr class="mb-4">
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="same-address">
+            <label class="custom-control-label" for="same-address">Shipping address is the same as my billing address</label>
+          </div>
+          <div class="custom-control custom-checkbox">
+            <input type="checkbox" class="custom-control-input" id="save-info">
+            <label class="custom-control-label" for="save-info">Save this information for next time</label>
+          </div>
+          <hr class="mb-4">
+  
+          <h4 class="mb-3">Payment</h4>
+  
+          <div class="d-block my-3">
+            <div class="custom-control custom-radio">
+              <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+              <label class="custom-control-label" for="credit">Credit card</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+              <label class="custom-control-label" for="debit">Debit card</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+              <label class="custom-control-label" for="paypal">Bkash</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+              <label class="custom-control-label" for="paypal">Nagad</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 mb-3">
+              <label for="cc-name">Name on card</label>
+              <input type="text" class="form-control" id="cc-name" placeholder="" required>
+              <small class="text-muted">Full name as displayed on card</small>
+              <div class="invalid-feedback">
+                Name on card is required
+              </div>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="cc-number">Credit card number</label>
+              <input type="text" class="form-control" id="cc-number" placeholder="" required>
+              <div class="invalid-feedback">
+                Credit card number is required
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 mb-3">
+              <label for="cc-expiration">Expiration</label>
+              <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+              <div class="invalid-feedback">
+                Expiration date required
+              </div>
+            </div>
+            <div class="col-md-3 mb-3">
+              <label for="cc-cvv">CVV</label>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+              <div class="invalid-feedback">
+                Security code required
+              </div>
+            </div>
+          </div>
+          <hr class="mb-4">
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
-       <!--
+<!--End Body Content-->
+
+
+
+
+
+  <!--
     - FOOTER
   -->
 
-  <footer>
+  <footer class="checkout-footer">
 
     <div class="footer-category">
+
       <div class="container">
+
         <h2 class="footer-category-title">Brand directory</h2>
+
         <div class="footer-category-box">
+
           <h3 class="category-box-title">Fashion :</h3>
+
           <a href="#" class="footer-category-link">T-shirt</a>
           <a href="#" class="footer-category-link">Shirts</a>
           <a href="#" class="footer-category-link">shorts & jeans</a>
@@ -803,10 +1050,12 @@
           <a href="#" class="footer-category-link">dress & frock</a>
           <a href="#" class="footer-category-link">innerwear</a>
           <a href="#" class="footer-category-link">hosiery</a>
+
         </div>
 
         <div class="footer-category-box">
           <h3 class="category-box-title">footwear :</h3>
+        
           <a href="#" class="footer-category-link">sport</a>
           <a href="#" class="footer-category-link">formal</a>
           <a href="#" class="footer-category-link">Boots</a>
@@ -821,6 +1070,7 @@
 
         <div class="footer-category-box">
           <h3 class="category-box-title">jewellery :</h3>
+        
           <a href="#" class="footer-category-link">Necklace</a>
           <a href="#" class="footer-category-link">Earrings</a>
           <a href="#" class="footer-category-link">Couple rings</a>
@@ -854,53 +1104,69 @@
           <a href="#" class="footer-category-link">liner</a>
           <a href="#" class="footer-category-link">lipstick</a>
         </div>
+
       </div>
+
     </div>
 
     <div class="footer-nav">
+
       <div class="container">
+
         <ul class="footer-nav-list">
 
           <li class="footer-nav-item">
             <h2 class="nav-title">Popular Categories</h2>
           </li>
+
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Fashion</a>
           </li>
+
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Electronic</a>
           </li>
+
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Cosmetic</a>
           </li>
+
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Health</a>
           </li>
+
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Watches</a>
           </li>
+
         </ul>
 
         <ul class="footer-nav-list">
-  
+        
           <li class="footer-nav-item">
             <h2 class="nav-title">Products</h2>
           </li>
+        
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Prices drop</a>
           </li>
+        
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">New products</a>
           </li>
+        
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Best sales</a>
           </li>
+        
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Contact us</a>
           </li>
+        
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Sitemap</a>
           </li>
+        
         </ul>
 
         <ul class="footer-nav-list">
@@ -908,21 +1174,27 @@
           <li class="footer-nav-item">
             <h2 class="nav-title">Our Company</h2>
           </li>
+        
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Delivery</a>
           </li>
+        
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Legal Notice</a>
           </li>
+        
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Terms and conditions</a>
           </li>
+        
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">About us</a>
           </li>
+        
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Secure payment</a>
           </li>
+        
         </ul>
 
         <ul class="footer-nav-list">
@@ -930,21 +1202,27 @@
           <li class="footer-nav-item">
             <h2 class="nav-title">Services</h2>
           </li>
+        
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Prices drop</a>
           </li>
+        
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">New products</a>
           </li>
+        
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Best sales</a>
           </li>
+        
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Contact us</a>
           </li>
+        
           <li class="footer-nav-item">
             <a href="#" class="footer-nav-link">Sitemap</a>
           </li>
+        
         </ul>
 
         <ul class="footer-nav-list">
@@ -952,15 +1230,18 @@
           <li class="footer-nav-item">
             <h2 class="nav-title">Contact</h2>
           </li>
+
           <li class="footer-nav-item flex">
             <div class="icon-box">
               <i class="fa-solid fa-location-dot"></i>
             </div>
+
             <address class="content">
               221/B
               Muradpur Chattogram, 
             </address>
           </li>
+
           <li class="footer-nav-item flex">
             <div class="icon-box">
               <i class="fa-solid fa-phone"></i>
@@ -968,12 +1249,14 @@
 
             <a href="tel:+8801558947938" class="footer-nav-link">(880) 1558947938</a>
           </li>
+
           <li class="footer-nav-item flex">
             <div class="icon-box">
               <i class="fa-solid fa-envelope"></i>
             </div>
             <a href="mailto:anaonedu@gmail.com" class="footer-nav-link">anaonedu@gmail.com</a>
           </li>
+
         </ul>
 
         <ul class="footer-nav-list">
@@ -981,6 +1264,7 @@
           <li class="footer-nav-item">
             <h2 class="nav-title">Follow Us</h2>
           </li>
+
           <li>
             <ul class="social-link">
 
@@ -989,28 +1273,36 @@
                   <i class="fa-brands fa-facebook"></i>
                 </a>
               </li>
+
               <li class="footer-nav-item">
                 <a href="#" class="footer-nav-link">
                   <i class="fa-brands fa-twitter"></i>
                 </a>
               </li>
+
               <li class="footer-nav-item">
                 <a href="#" class="footer-nav-link">
                   <i class="fa-brands fa-linkedin"></i>
                 </a>
               </li>
+
               <li class="footer-nav-item">
                 <a href="#" class="footer-nav-link">
                   <i class="fa-brands fa-instagram"></i>
                 </a>
               </li>
+
             </ul>
           </li>
+
         </ul>
+
       </div>
+
     </div>
 
     <div class="footer-bottom">
+
       <div class="container">
 
         <img src="./assets/images/payment.png" alt="payment method" class="payment-img">
@@ -1020,21 +1312,34 @@
         </p>
 
       </div>
+
     </div>
+
   </footer>
 
-      <!-- Including Javascript -->
-      <script src="./assets/js/script.js"></script>
-      <script src="./assets/js/vendor/jquery-3.3.1.min.js"></script>
-      <script src="./assets/js/swiper-bundle.min.js"></script>
-      <script src="./assets/js/bootstrap.bundle.min.js"></script>
-      <script src="./assets/js/all.js"></script>
-      <script>
-        var loader = document.getElementById("preloader");
-    
-        window.addEventListener("load", function(){
-          loader.style.display = 'none';
-        })
-      </script>
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/vendor/jquery-3.3.1.min.js"></script>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <script src="./assets/js/all.js"></script>
+  <script>
+    // preloader 
+
+  var loader = document.getElementById("preloader");
+
+  window.addEventListener("load", function(){
+    loader.style.display = 'none';
+  })
+  </script>
+
 </body>
+
 </html>
